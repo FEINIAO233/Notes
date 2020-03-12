@@ -7,6 +7,7 @@
 // @lc code=start
 class Solution {
     public int[] twoSum(int[] nums, int target) {
+        //暴力破解
         var temp = new int[2];
         for(var i = 0;i<nums.length;i++){
             for(var j = 0;j<nums.length;j++){
