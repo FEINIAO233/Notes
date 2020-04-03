@@ -62,25 +62,49 @@ class Solution {
         if(root == null){
             return true;
         }
-        if(root.left != null && root.left.val >= root.val){
-            return false;
+        // if(root.left != null && root.left.val >= root.val){
+        //     return false;
+        // }
+        // if(root.right != null && root.right.val <= root.val){
+        //     return false;
+        // }
+        // boolean i = true;
+        // boolean j = true;
+        // if(root.left != null){
+        //     i = isValidBST(root.left);
+        // }
+        // if(root.right != null){
+        //     j = isValidBST(root.right);
+        // }
+        // if(i && j){
+        //     return true;
+        // }else{
+        //     return false;
+        // }
+        List<Integer> tree = new ArrayList<Integer>();
+        getpre(root,tree);
+        Object[] treei = tree.toArray();
+        for(int i = 0; i < treei.length; i++){
+            for(int j = i+1;j < treei.length;j++){
+                if((int)treei[i] >= (int)treei[j]){
+                    return false;
+                }
+            }
         }
-        if(root.right != null && root.right.val <= root.val){
-            return false;
-        }
-        boolean i = true;
-        boolean j = true;
+        return true;
+    }
+    public List<Integer> getpre(TreeNode root,List<Integer> tree){
         if(root.left != null){
-            i = isValidBST(root.left);
+            getpre(root.left,tree);
+        }
+        if(root != null){
+            tree.add(root.val);
         }
         if(root.right != null){
-            j = isValidBST(root.right);
+            getpre(root.right,tree);
         }
-        if(i && j){
-            return true;
-        }else{
-            return false;
-        }
+
+        return tree;
     }
 }
 // @lc code=end
