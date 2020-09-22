@@ -1,0 +1,22 @@
+{
+  "title": "notes",
+  "description": "demo",
+  "language": "zh-hans",
+  "plugins": [
+    "-search",
+    "back-to-top-button",
+    "expandable-chapters",
+    "code",
+    "-lunr",
+    "search-pro",
+    "github"
+  ],
+  "pluginsConfig": {
+    "code": {
+      "copyButtons": false
+    },
+    "github": {
+      "url": "https://github.com/FEINIAO233"
+    }
+  }
+}
