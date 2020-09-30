@@ -12,6 +12,8 @@
     * [26.路径总和II](note/mei-ri-yi-ti/202009/26.md)
     * [27.二叉搜索树的最近公共祖先](note/mei-ri-yi-ti/202009/27.md)
     * [28.填充每个节点的下一个右侧节点指针II](note/mei-ri-yi-ti/202009/28.md)
+    * [29.](note/mei-ri-yi-ti/202009/29.md)
+    * [30.二叉搜索树的插入操作](note/mei-ri-yi-ti/202009/30.md)
 
 ## Java学习笔记
 
